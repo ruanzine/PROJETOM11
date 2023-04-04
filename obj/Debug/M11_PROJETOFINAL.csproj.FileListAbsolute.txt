@@ -1,0 +1,12 @@
+C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\bin\Debug\M11_PROJETOFINAL.exe.config
+C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\bin\Debug\M11_PROJETOFINAL.exe
+C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\bin\Debug\M11_PROJETOFINAL.pdb
+C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.csproj.AssemblyReference.cache
+C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.csproj.SuggestedBindingRedirects.cache
+C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.gui.FormLogin.resources
+C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.Properties.Resources.resources
+C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.csproj.GenerateResource.cache
+C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.csproj.CoreCompileInputs.cache
+C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.exe
+C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.pdb
+C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.FormInicial.resources

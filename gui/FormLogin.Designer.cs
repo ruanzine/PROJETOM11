@@ -92,9 +92,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(49, 31);
+            this.pictureBox1.Image = global::M11_PROJETOFINAL.Properties.Resources.Design_sem_nome__8__removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(41, 15);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(287, 208);
+            this.pictureBox1.Size = new System.Drawing.Size(299, 201);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 49;
             this.pictureBox1.TabStop = false;
@@ -113,7 +114,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(31, 8);
+            this.label2.Location = new System.Drawing.Point(31, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(331, 13);
             this.label2.TabIndex = 47;

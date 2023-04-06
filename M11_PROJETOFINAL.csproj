@@ -63,6 +63,7 @@
     <Compile Include="scripts\Compra_Venda.cs" />
     <Compile Include="scripts\Manutencoes.cs" />
     <Compile Include="scripts\Registos.cs" />
+    <Compile Include="scripts\User.cs" />
     <EmbeddedResource Include="gui\FormInicial.resx">
       <DependentUpon>FormInicial.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +78,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -91,8 +93,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="images\" />
+    <None Include="Resources\Design_sem_nome__8_-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

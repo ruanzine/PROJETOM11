@@ -18,9 +18,10 @@ namespace M11_PROJETOFINAL
         public FormInicial()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
+
         }
 
-        
 
         private void bttGuardar_CompraVenda_Click(object sender, EventArgs e)
         {
@@ -422,6 +423,11 @@ namespace M11_PROJETOFINAL
             {
                 e.Handled = true;
             }
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

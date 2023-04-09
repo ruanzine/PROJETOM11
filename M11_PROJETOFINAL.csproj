@@ -63,7 +63,9 @@
     <Compile Include="scripts\Compra_Venda.cs" />
     <Compile Include="scripts\Manutencoes.cs" />
     <Compile Include="scripts\Registos.cs" />
-    <Compile Include="scripts\User.cs" />
+    <Compile Include="scripts\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="gui\FormInicial.resx">
       <DependentUpon>FormInicial.cs</DependentUpon>
     </EmbeddedResource>

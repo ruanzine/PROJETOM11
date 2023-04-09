@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace M11_PROJETOFINAL.scripts
 {
-    public abstract class User
+    public abstract class User : Form
     {
         public string Nome { get; }
 
@@ -20,7 +20,7 @@ namespace M11_PROJETOFINAL.scripts
 
             string fileName = Nome + ".txt";
 
-            if (File.Exists(fileName){
+            if (File.Exists(fileName)){
                 string[] lines = File.ReadAllLines(fileName);
 
                 if (lines.Length >= 2)

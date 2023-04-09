@@ -1,4 +1,5 @@
-﻿using M11_PROJETOFINAL.scripts;
+﻿using M11_PROJETOFINAL.gui;
+using M11_PROJETOFINAL.scripts;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,23 @@ namespace M11_PROJETOFINAL
             StartPosition = FormStartPosition.CenterScreen;
 
         }
+
+        private void FormInicial_Load(object sender, EventArgs e)
+        {
+            FormLogin loginForm = new FormLogin { StartPosition = FormStartPosition.CenterScreen } ;
+
+            if (loginForm.ShowDialog()== DialogResult.OK){
+
+                this.Show();
+
+            }
+            else
+            {
+                this.Close();
+            }
+
+        }
+
 
 
         private void bttGuardar_CompraVenda_Click(object sender, EventArgs e)
@@ -429,5 +447,7 @@ namespace M11_PROJETOFINAL
         {
 
         }
+
+     
     }
 }

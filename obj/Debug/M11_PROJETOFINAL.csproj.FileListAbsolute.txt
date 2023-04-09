@@ -10,3 +10,15 @@ C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.cspro
 C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.exe
 C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.pdb
 C:\Users\Utilizador\source\M11\M11_PROJETOFINAL\obj\Debug\M11_PROJETOFINAL.FormInicial.resources
+C:\Users\Ruan\source\repos\PROJETOM11\bin\Debug\M11_PROJETOFINAL.exe.config
+C:\Users\Ruan\source\repos\PROJETOM11\bin\Debug\M11_PROJETOFINAL.exe
+C:\Users\Ruan\source\repos\PROJETOM11\bin\Debug\M11_PROJETOFINAL.pdb
+C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.csproj.AssemblyReference.cache
+C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.FormInicial.resources
+C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.gui.FormLogin.resources
+C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.Properties.Resources.resources
+C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.csproj.GenerateResource.cache
+C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.csproj.CoreCompileInputs.cache
+C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.exe
+C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.pdb

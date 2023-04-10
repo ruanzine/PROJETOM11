@@ -23,11 +23,12 @@ namespace M11_PROJETOFINAL
 
         }
 
+
         private void FormInicial_Load(object sender, EventArgs e)
         {
             FormLogin loginForm = new FormLogin { StartPosition = FormStartPosition.CenterScreen } ;
 
-            if (loginForm.ShowDialog()== DialogResult.OK){
+            if (loginForm.ShowDialog() == DialogResult.OK){
 
                 this.Show();
 
@@ -448,6 +449,9 @@ namespace M11_PROJETOFINAL
 
         }
 
-     
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

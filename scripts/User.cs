@@ -4,23 +4,36 @@ using System.Windows.Forms;
 
 namespace M11_PROJETOFINAL.scripts
 {
-    public abstract class User : Form
+    public abstract class User
     {
         public string Nome { get; }
 
         public List<TabPage> Tabs { get; set; }
 
-        public virtual void FillTabs()
+        public User()
         {
             Tabs = new List<TabPage>();
         }
+
+        public virtual List<TabPage> GetAllowedTabs()
+        {
+            return new List<TabPage>();
+        }
+
+        public virtual void FillTabs()
+        {
+            Tabs.Clear();
+            Tabs = GetAllowedTabs();
+        }
+
         public string[] GetCredentials()
         {
             string[] credentials = new string[2];
 
             string fileName = Nome + ".txt";
 
-            if (File.Exists(fileName)){
+            if (File.Exists(fileName))
+            {
                 string[] lines = File.ReadAllLines(fileName);
 
                 if (lines.Length >= 2)

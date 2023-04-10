@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabDistribuidores = new System.Windows.Forms.TabPage();
             this.label23 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
@@ -38,7 +38,7 @@
             this.Distribuidor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Instrumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabEmManu = new System.Windows.Forms.TabPage();
             this.bttAtualizar_Conserto = new System.Windows.Forms.Button();
             this.dgvManu = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,7 +49,7 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label28 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabHistorico = new System.Windows.Forms.TabPage();
             this.dgvHistorico = new System.Windows.Forms.DataGridView();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Telemovel = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,7 +60,7 @@
             this.label27 = new System.Windows.Forms.Label();
             this.bttAtualizar_Historico = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabManu = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -82,7 +82,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNome_Manu = new System.Windows.Forms.TextBox();
-            this.tab1 = new System.Windows.Forms.TabPage();
+            this.tabCompra_Venda = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -104,7 +104,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.txtNome_CompraVenda = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabInicio = new System.Windows.Forms.TabPage();
             this.txtInicioUsuario = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -113,47 +113,48 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.a = new System.Windows.Forms.TabControl();
-            this.tabPage3.SuspendLayout();
+            this.TabGeral = new System.Windows.Forms.TabControl();
+            this.tabDistribuidores.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
-            this.tabPage6.SuspendLayout();
+            this.tabEmManu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.tabPage4.SuspendLayout();
+            this.tabHistorico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.tabManu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.tab1.SuspendLayout();
+            this.tabCompra_Venda.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox13.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.tabInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbUsuario)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.a.SuspendLayout();
+            this.TabGeral.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabPage3
+            // tabDistribuidores
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage3.Controls.Add(this.label23);
-            this.tabPage3.Controls.Add(this.panel3);
-            this.tabPage3.Controls.Add(this.dgvCliente);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(792, 441);
-            this.tabPage3.TabIndex = 7;
-            this.tabPage3.Text = "Distribuidores";
+            this.tabDistribuidores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabDistribuidores.Controls.Add(this.label23);
+            this.tabDistribuidores.Controls.Add(this.panel3);
+            this.tabDistribuidores.Controls.Add(this.dgvCliente);
+            this.tabDistribuidores.Location = new System.Drawing.Point(4, 22);
+            this.tabDistribuidores.Name = "tabDistribuidores";
+            this.tabDistribuidores.Size = new System.Drawing.Size(792, 441);
+            this.tabDistribuidores.TabIndex = 7;
+            this.tabDistribuidores.Text = "Distribuidores";
+            this.tabDistribuidores.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // label23
             // 
@@ -244,18 +245,18 @@
             this.Marca.Name = "Marca";
             this.Marca.ReadOnly = true;
             // 
-            // tabPage6
+            // tabEmManu
             // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage6.Controls.Add(this.bttAtualizar_Conserto);
-            this.tabPage6.Controls.Add(this.dgvManu);
-            this.tabPage6.Controls.Add(this.label28);
-            this.tabPage6.Controls.Add(this.pictureBox5);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(792, 441);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Em Manutenção";
+            this.tabEmManu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabEmManu.Controls.Add(this.bttAtualizar_Conserto);
+            this.tabEmManu.Controls.Add(this.dgvManu);
+            this.tabEmManu.Controls.Add(this.label28);
+            this.tabEmManu.Controls.Add(this.pictureBox5);
+            this.tabEmManu.Location = new System.Drawing.Point(4, 22);
+            this.tabEmManu.Name = "tabEmManu";
+            this.tabEmManu.Size = new System.Drawing.Size(792, 441);
+            this.tabEmManu.TabIndex = 5;
+            this.tabEmManu.Text = "Em Manutenção";
             // 
             // bttAtualizar_Conserto
             // 
@@ -353,19 +354,19 @@
             this.pictureBox5.TabIndex = 51;
             this.pictureBox5.TabStop = false;
             // 
-            // tabPage4
+            // tabHistorico
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage4.Controls.Add(this.dgvHistorico);
-            this.tabPage4.Controls.Add(this.label27);
-            this.tabPage4.Controls.Add(this.bttAtualizar_Historico);
-            this.tabPage4.Controls.Add(this.pictureBox4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(792, 441);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Histórico";
+            this.tabHistorico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabHistorico.Controls.Add(this.dgvHistorico);
+            this.tabHistorico.Controls.Add(this.label27);
+            this.tabHistorico.Controls.Add(this.bttAtualizar_Historico);
+            this.tabHistorico.Controls.Add(this.pictureBox4);
+            this.tabHistorico.Location = new System.Drawing.Point(4, 22);
+            this.tabHistorico.Name = "tabHistorico";
+            this.tabHistorico.Padding = new System.Windows.Forms.Padding(3);
+            this.tabHistorico.Size = new System.Drawing.Size(792, 441);
+            this.tabHistorico.TabIndex = 3;
+            this.tabHistorico.Text = "Histórico";
             // 
             // dgvHistorico
             // 
@@ -463,20 +464,20 @@
             this.pictureBox4.TabIndex = 48;
             this.pictureBox4.TabStop = false;
             // 
-            // tabPage1
+            // tabManu
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.groupBox11);
-            this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 441);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Manutenção";
+            this.tabManu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabManu.Controls.Add(this.panel2);
+            this.tabManu.Controls.Add(this.groupBox1);
+            this.tabManu.Controls.Add(this.groupBox11);
+            this.tabManu.Controls.Add(this.label14);
+            this.tabManu.Controls.Add(this.groupBox2);
+            this.tabManu.Location = new System.Drawing.Point(4, 22);
+            this.tabManu.Name = "tabManu";
+            this.tabManu.Padding = new System.Windows.Forms.Padding(3);
+            this.tabManu.Size = new System.Drawing.Size(792, 441);
+            this.tabManu.TabIndex = 0;
+            this.tabManu.Text = "Manutenção";
             // 
             // panel2
             // 
@@ -714,20 +715,20 @@
             this.txtNome_Manu.Size = new System.Drawing.Size(238, 20);
             this.txtNome_Manu.TabIndex = 5;
             // 
-            // tab1
+            // tabCompra_Venda
             // 
-            this.tab1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tab1.Controls.Add(this.panel1);
-            this.tab1.Controls.Add(this.groupBox5);
-            this.tab1.Controls.Add(this.groupBox6);
-            this.tab1.Controls.Add(this.label11);
-            this.tab1.Controls.Add(this.groupBox13);
-            this.tab1.Location = new System.Drawing.Point(4, 22);
-            this.tab1.Name = "tab1";
-            this.tab1.Padding = new System.Windows.Forms.Padding(3);
-            this.tab1.Size = new System.Drawing.Size(792, 441);
-            this.tab1.TabIndex = 2;
-            this.tab1.Text = "Novo Registo";
+            this.tabCompra_Venda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabCompra_Venda.Controls.Add(this.panel1);
+            this.tabCompra_Venda.Controls.Add(this.groupBox5);
+            this.tabCompra_Venda.Controls.Add(this.groupBox6);
+            this.tabCompra_Venda.Controls.Add(this.label11);
+            this.tabCompra_Venda.Controls.Add(this.groupBox13);
+            this.tabCompra_Venda.Location = new System.Drawing.Point(4, 22);
+            this.tabCompra_Venda.Name = "tabCompra_Venda";
+            this.tabCompra_Venda.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCompra_Venda.Size = new System.Drawing.Size(792, 441);
+            this.tabCompra_Venda.TabIndex = 2;
+            this.tabCompra_Venda.Text = "Novo Registo";
             // 
             // panel1
             // 
@@ -975,21 +976,21 @@
             this.txtNome_CompraVenda.Size = new System.Drawing.Size(236, 20);
             this.txtNome_CompraVenda.TabIndex = 5;
             // 
-            // tabPage2
+            // tabInicio
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage2.Controls.Add(this.txtInicioUsuario);
-            this.tabPage2.Controls.Add(this.label22);
-            this.tabPage2.Controls.Add(this.label21);
-            this.tabPage2.Controls.Add(this.picbUsuario);
-            this.tabPage2.Controls.Add(this.panel4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 441);
-            this.tabPage2.TabIndex = 6;
-            this.tabPage2.Text = "Início";
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            this.tabInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabInicio.Controls.Add(this.txtInicioUsuario);
+            this.tabInicio.Controls.Add(this.label22);
+            this.tabInicio.Controls.Add(this.label21);
+            this.tabInicio.Controls.Add(this.picbUsuario);
+            this.tabInicio.Controls.Add(this.panel4);
+            this.tabInicio.Location = new System.Drawing.Point(4, 22);
+            this.tabInicio.Name = "tabInicio";
+            this.tabInicio.Padding = new System.Windows.Forms.Padding(3);
+            this.tabInicio.Size = new System.Drawing.Size(792, 441);
+            this.tabInicio.TabIndex = 6;
+            this.tabInicio.Text = "Início";
+            this.tabInicio.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // txtInicioUsuario
             // 
@@ -1070,46 +1071,46 @@
             this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
             // 
-            // a
+            // TabGeral
             // 
-            this.a.Controls.Add(this.tabPage2);
-            this.a.Controls.Add(this.tab1);
-            this.a.Controls.Add(this.tabPage4);
-            this.a.Controls.Add(this.tabPage1);
-            this.a.Controls.Add(this.tabPage6);
-            this.a.Controls.Add(this.tabPage3);
-            this.a.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.a.Location = new System.Drawing.Point(0, 0);
-            this.a.Name = "a";
-            this.a.SelectedIndex = 0;
-            this.a.Size = new System.Drawing.Size(800, 467);
-            this.a.TabIndex = 2;
+            this.TabGeral.Controls.Add(this.tabInicio);
+            this.TabGeral.Controls.Add(this.tabCompra_Venda);
+            this.TabGeral.Controls.Add(this.tabHistorico);
+            this.TabGeral.Controls.Add(this.tabManu);
+            this.TabGeral.Controls.Add(this.tabEmManu);
+            this.TabGeral.Controls.Add(this.tabDistribuidores);
+            this.TabGeral.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabGeral.Location = new System.Drawing.Point(0, 0);
+            this.TabGeral.Name = "TabGeral";
+            this.TabGeral.SelectedIndex = 0;
+            this.TabGeral.Size = new System.Drawing.Size(800, 467);
+            this.TabGeral.TabIndex = 2;
             // 
             // FormInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 467);
-            this.Controls.Add(this.a);
+            this.Controls.Add(this.TabGeral);
             this.Name = "FormInicial";
             this.Text = "RuanzinConsertos - Registos";
             this.Load += new System.EventHandler(this.FormInicial_Load);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            this.tabDistribuidores.ResumeLayout(false);
+            this.tabDistribuidores.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
+            this.tabEmManu.ResumeLayout(false);
+            this.tabEmManu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
+            this.tabHistorico.ResumeLayout(false);
+            this.tabHistorico.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tabManu.ResumeLayout(false);
+            this.tabManu.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -1119,8 +1120,8 @@
             this.groupBox11.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.tab1.ResumeLayout(false);
-            this.tab1.PerformLayout();
+            this.tabCompra_Venda.ResumeLayout(false);
+            this.tabCompra_Venda.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1130,20 +1131,18 @@
             this.groupBox6.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.tabInicio.ResumeLayout(false);
+            this.tabInicio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbUsuario)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.a.ResumeLayout(false);
+            this.TabGeral.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label18;
@@ -1152,7 +1151,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Distribuidor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Instrumento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
-        private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Button bttAtualizar_Conserto;
         private System.Windows.Forms.DataGridView dgvManu;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -1163,7 +1161,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.DataGridView dgvHistorico;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telemovel;
@@ -1174,7 +1171,6 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button bttAtualizar_Historico;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -1196,7 +1192,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNome_Manu;
-        private System.Windows.Forms.TabPage tab1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
@@ -1218,8 +1213,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtNome_CompraVenda;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabControl a;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
@@ -1229,6 +1222,13 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox picbUsuario;
         private System.Windows.Forms.Label label23;
+        public System.Windows.Forms.TabControl TabGeral;
+        public System.Windows.Forms.TabPage tabCompra_Venda;
+        public System.Windows.Forms.TabPage tabEmManu;
+        public System.Windows.Forms.TabPage tabHistorico;
+        public System.Windows.Forms.TabPage tabManu;
+        public System.Windows.Forms.TabPage tabInicio;
+        public System.Windows.Forms.TabPage tabDistribuidores;
     }
 }
 

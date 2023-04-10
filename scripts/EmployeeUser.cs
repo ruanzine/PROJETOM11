@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace M11_PROJETOFINAL.scripts
 {
-    internal class EmployeeUser
+    public class EmployeeUser : User
     {
+
+        
     }
 }

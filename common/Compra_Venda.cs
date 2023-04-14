@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace M11_PROJETOFINAL.scripts
+namespace M11_PROJETOFINAL.common
 {
     public class Compra_Venda : Registos
     {

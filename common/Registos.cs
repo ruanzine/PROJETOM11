@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace M11_PROJETOFINAL.scripts
+namespace M11_PROJETOFINAL.common
 {
 
     [Serializable]

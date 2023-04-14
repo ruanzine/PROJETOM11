@@ -16,11 +16,20 @@ namespace M11_PROJETOFINAL
 {
     public partial class FormInicial : Form
     {
-        public FormInicial()
+
+        /// <summary>
+        /// Singleton instance of the FormInicial class, to be used across the program.
+        /// </summary>
+        public static FormInicial INSTANCE { get; private set; } = new FormInicial();
+
+        /// <summary>
+        /// Main constructor for the FormInicial class. This constructor enforces the usage of the singleton
+        /// instance property and sets the form at the center of the screen upon launch.
+        /// </summary>
+        private FormInicial()
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
-
         }
 
 

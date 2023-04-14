@@ -1,4 +1,5 @@
-﻿using System;
+﻿using M11_PROJETOFINAL.entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,15 @@ namespace M11_PROJETOFINAL.gui
 
         private void bttLogin_Click(object sender, EventArgs e)
         {
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+            
+            User userClass = new EntityFactory().GetUserClass(username);
+
+            if(userClass == null)
+            {
+                lblError.Visible = true;
+            }
 
         }
     }

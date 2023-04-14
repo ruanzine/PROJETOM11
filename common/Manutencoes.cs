@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace M11_PROJETOFINAL.scripts
+namespace M11_PROJETOFINAL.common
 {
     public class Manutencoes : Registos
     {

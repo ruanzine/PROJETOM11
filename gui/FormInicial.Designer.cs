@@ -105,8 +105,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.txtNome_CompraVenda = new System.Windows.Forms.TextBox();
             this.tabInicio = new System.Windows.Forms.TabPage();
-            this.txtInicioUsuario = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
+            this.lblUsuarioBase = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.picbUsuario = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -114,6 +113,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.TabGeral = new System.Windows.Forms.TabControl();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.tabDistribuidores.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -872,14 +872,14 @@
             this.cbxInstrumento_CompraVenda.FormattingEnabled = true;
             this.cbxInstrumento_CompraVenda.Items.AddRange(new object[] {
             "Baixo",
-            "Contra-baixo",
+            "Contrabaixo",
             "Guitarra",
             "Guitarra Acústica",
-            "Viola ",
+            "Piano Digital",
+            "Teclado",
+            "Viola",
             "Violino",
-            "Violoncelo",
-            "Piano Digital ",
-            "Teclado"});
+            "Violoncelo"});
             this.cbxInstrumento_CompraVenda.Location = new System.Drawing.Point(131, 21);
             this.cbxInstrumento_CompraVenda.Name = "cbxInstrumento_CompraVenda";
             this.cbxInstrumento_CompraVenda.Size = new System.Drawing.Size(237, 21);
@@ -979,8 +979,8 @@
             // tabInicio
             // 
             this.tabInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabInicio.Controls.Add(this.txtInicioUsuario);
-            this.tabInicio.Controls.Add(this.label22);
+            this.tabInicio.Controls.Add(this.lblUsuario);
+            this.tabInicio.Controls.Add(this.lblUsuarioBase);
             this.tabInicio.Controls.Add(this.label21);
             this.tabInicio.Controls.Add(this.picbUsuario);
             this.tabInicio.Controls.Add(this.panel4);
@@ -992,30 +992,23 @@
             this.tabInicio.Text = "Início";
             this.tabInicio.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // txtInicioUsuario
+            // lblUsuarioBase
             // 
-            this.txtInicioUsuario.Location = new System.Drawing.Point(535, 316);
-            this.txtInicioUsuario.Name = "txtInicioUsuario";
-            this.txtInicioUsuario.Size = new System.Drawing.Size(87, 20);
-            this.txtInicioUsuario.TabIndex = 45;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.LightCyan;
-            this.label22.Location = new System.Drawing.Point(483, 317);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(46, 16);
-            this.label22.TabIndex = 44;
-            this.label22.Text = "Usuário";
+            this.lblUsuarioBase.AutoSize = true;
+            this.lblUsuarioBase.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuarioBase.ForeColor = System.Drawing.Color.LightCyan;
+            this.lblUsuarioBase.Location = new System.Drawing.Point(504, 312);
+            this.lblUsuarioBase.Name = "lblUsuarioBase";
+            this.lblUsuarioBase.Size = new System.Drawing.Size(49, 16);
+            this.lblUsuarioBase.TabIndex = 44;
+            this.lblUsuarioBase.Text = "Usuário:";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.LightCyan;
-            this.label21.Location = new System.Drawing.Point(502, 55);
+            this.label21.Location = new System.Drawing.Point(506, 55);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(104, 35);
             this.label21.TabIndex = 43;
@@ -1023,7 +1016,7 @@
             // 
             // picbUsuario
             // 
-            this.picbUsuario.Location = new System.Drawing.Point(486, 124);
+            this.picbUsuario.Location = new System.Drawing.Point(490, 124);
             this.picbUsuario.Name = "picbUsuario";
             this.picbUsuario.Size = new System.Drawing.Size(136, 169);
             this.picbUsuario.TabIndex = 42;
@@ -1085,6 +1078,17 @@
             this.TabGeral.SelectedIndex = 0;
             this.TabGeral.Size = new System.Drawing.Size(800, 467);
             this.TabGeral.TabIndex = 2;
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.LightCyan;
+            this.lblUsuario.Location = new System.Drawing.Point(552, 312);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(45, 16);
+            this.lblUsuario.TabIndex = 45;
+            this.lblUsuario.Text = "usuario";
             // 
             // FormInicial
             // 
@@ -1217,8 +1221,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox txtInicioUsuario;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label lblUsuarioBase;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox picbUsuario;
         private System.Windows.Forms.Label label23;
@@ -1229,6 +1232,7 @@
         public System.Windows.Forms.TabPage tabManu;
         public System.Windows.Forms.TabPage tabInicio;
         public System.Windows.Forms.TabPage tabDistribuidores;
+        public System.Windows.Forms.Label lblUsuario;
     }
 }
 

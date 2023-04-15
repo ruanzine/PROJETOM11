@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ArrayOfManutencoes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Manutencoes>
+    <Preco>0,99</Preco>
+    <Nome>sim</Nome>
+    <Tel>374589345</Tel>
+    <Instrumento>Guitarra Acústica</Instrumento>
+    <Defeito>Corda partida</Defeito>
+    <Descricao>asodfi</Descricao>
+  </Manutencoes>
+  <Manutencoes>
+    <Preco>2,99</Preco>
+    <Nome>nao</Nome>
+    <Tel>348573847</Tel>
+    <Instrumento>Baixo</Instrumento>
+    <Defeito>Corda partida</Defeito>
+    <Descricao>sgertihjshjjhgçgj</Descricao>
+  </Manutencoes>
+</ArrayOfManutencoes>

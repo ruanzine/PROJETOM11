@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfCompra_Venda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Compra_Venda>
+    <Preco>999,98</Preco>
+    <Nome>primerio</Nome>
+    <Tel>111111111</Tel>
+    <Instrumento>Guitarra</Instrumento>
+    <Tipo>Compra</Tipo>
+    <Marca>Fender</Marca>
+  </Compra_Venda>
+  <Compra_Venda>
+    <Preco>599,99</Preco>
+    <Nome>asdfgh</Nome>
+    <Tel>666666666</Tel>
+    <Instrumento>Baixo</Instrumento>
+    <Tipo>Compra</Tipo>
+    <Marca>Ibanez</Marca>
+  </Compra_Venda>
+  <Compra_Venda>
+    <Preco>599,99</Preco>
+    <Nome>jyhtgfred</Nome>
+    <Tel>000000000</Tel>
+    <Instrumento>Baixo</Instrumento>
+    <Tipo>Compra</Tipo>
+    <Marca>Ibanez</Marca>
+  </Compra_Venda>
+</ArrayOfCompra_Venda>

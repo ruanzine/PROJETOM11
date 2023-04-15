@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace M11_PROJETOFINAL.common
 {
@@ -17,7 +13,6 @@ namespace M11_PROJETOFINAL.common
         public class Lista
         {
             public static List<Manutencoes> Lista_Manu = new List<Manutencoes>();
-
         }
     }
 }

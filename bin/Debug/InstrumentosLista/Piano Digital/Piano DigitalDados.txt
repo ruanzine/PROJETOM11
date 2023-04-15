@@ -1,0 +1,10 @@
+Casio:1199,99
+Yamaha:1999,99
+Roland:2499,99
+Korg:1999,99
+Nord:3499,99
+Kurzweil:2499,99
+Kawai:2499,99
+Alesis:799,99
+Williams:1199,99
+Dexibell:2999,99

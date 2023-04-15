@@ -124,14 +124,14 @@
             // 
             // lblError
             // 
-            this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
-            this.lblError.Location = new System.Drawing.Point(120, 352);
+            this.lblError.Location = new System.Drawing.Point(0, 352);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(133, 15);
+            this.lblError.Size = new System.Drawing.Size(384, 16);
             this.lblError.TabIndex = 56;
             this.lblError.Text = "este usuário não existe";
+            this.lblError.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblError.Visible = false;
             // 
             // FormLogin
@@ -155,7 +155,6 @@
             this.Name = "FormLogin";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "FormLogin";
-            this.Load += new System.EventHandler(this.FormLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

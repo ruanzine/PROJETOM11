@@ -9,13 +9,11 @@ namespace M11_PROJETOFINAL.common
     /// Possui as classes herdeiras Manutencoes e Compra_Venda
     /// </summary>
     public class Registos
-    { 
-
-        public double Preco { get; set; }
+    {
+        public string Preco { get; set; }
         public string Nome { get; set; }
         public string Tel { get; set; }
         public string Instrumento { get; set; }
-
 
     }
 }

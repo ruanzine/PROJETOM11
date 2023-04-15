@@ -22,3 +22,5 @@ C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.csproj.Generate
 C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.csproj.CoreCompileInputs.cache
 C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.exe
 C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.pdb
+C:\Users\Ruan\source\repos\PROJETOM11\bin\Debug\PgpsUtilsAEFC.dll
+C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.csproj.CopyComplete

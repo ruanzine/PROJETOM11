@@ -10,6 +10,7 @@ namespace M11_PROJETOFINAL.common
     /// </summary>
     public class Registos
     {
+
         public string Preco { get; set; }
         public string Nome { get; set; }
         public string Tel { get; set; }

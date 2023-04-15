@@ -30,8 +30,7 @@ namespace M11_PROJETOFINAL
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
 
-            //Caso o ficheiro XML Registo_CompraVenda exista, essa validação irá fazer a Desserialização do ficheiro,
-            // adicionar a lista
+
             if (File.Exists("Registo_CompraVenda.xml"))
             {
                 FileStream ficheiroExistente = new FileStream("Registo_CompraVenda.xml", FileMode.Open, FileAccess.Read);
@@ -49,10 +48,14 @@ namespace M11_PROJETOFINAL
                 Manutencoes.Lista.Lista_Manu.AddRange(listaExistente);
                 ficheiroExistente.Close();
             }
-
         }
 
-        private void FormInicial_Load(object sender, EventArgs e)
+           
+
+
+
+
+            private void FormInicial_Load(object sender, EventArgs e)
         {
             FormLogin loginForm = new FormLogin { StartPosition = FormStartPosition.CenterScreen };
 
@@ -98,6 +101,18 @@ namespace M11_PROJETOFINAL
 
                 if (cbxTipo_CompraVenda.Text == "Compra") novaCompra_Venda.Tipo = cbxTipo_CompraVenda.Text;
                 if (cbxTipo_CompraVenda.Text == "Venda") novaCompra_Venda.Tipo = cbxTipo_CompraVenda.Text;
+
+                // Caso o ficheiro XML Registo_CompraVenda exista, essa validação irá fazer a Desserialização do ficheiro,
+                // adicionar a lista
+                if (File.Exists("Registo_CompraVenda.xml"))
+                {
+                    FileStream ficheiroExistente = new FileStream("Registo_CompraVenda.xml", FileMode.Open, FileAccess.Read);
+                    XmlSerializer serie_ = new XmlSerializer(typeof(List<Compra_Venda>));
+                    List<Compra_Venda> listaExistente = (List<Compra_Venda>)serie_.Deserialize(ficheiroExistente);
+                    Compra_Venda.Lista.Lista_CompraVenda.AddRange(listaExistente);
+                    ficheiroExistente.Close();
+                }
+
 
                 Compra_Venda.Lista.Lista_CompraVenda.Add(novaCompra_Venda);
 
@@ -199,6 +214,7 @@ namespace M11_PROJETOFINAL
                 dgvHistorico.Rows.Clear();
                 foreach (Compra_Venda item in Compra_Venda.Lista.Lista_CompraVenda)
                 {
+
                     dgvHistorico.Rows.Add(item.Nome, item.Tel.ToString(), item.Instrumento, item.Marca, item.Preco,
                     item.Tipo);
 
@@ -229,11 +245,9 @@ namespace M11_PROJETOFINAL
                 foreach (Manutencoes item in Manutencoes.Lista.Lista_Manu)
                 {
                     dgvManu.Rows.Add(item.Nome, item.Tel.ToString(), item.Instrumento, item.Defeito,
-<<<<<<< HEAD
                         item.Descricao, item.Preco);
 
                 }
-
 
             }
             catch (FileNotFoundException)
@@ -300,85 +314,13 @@ namespace M11_PROJETOFINAL
                     string[] dados = linha.Split(':');
                     string marca = dados[0];
                     string precoD = dados[1];
-                    
-            if (cbxInstrumento_CompraVenda.SelectedIndex == 4)
-            {
-                List<string> novaMarca = new List<string> { "Yamaha", "Eastman" };
-
-                        txtPreco_CompraVenda.Text = precoD;
-                        break;
-                    }
-                }
-            if (cbxInstrumento_CompraVenda.SelectedIndex == 4)
-            {
-                List<string> novaMarca = new List<string> { "Yamaha", "Eastman" };
-
-            }
-
-            if (cbxInstrumento_CompraVenda.SelectedIndex == 6)
-            {
-
-                List<string> novaMarca = new List<string> { "Yamaha", "GEWA" };
-
-                cbxMarca_CompraVenda.Items.Clear();
-                cbxMarca_CompraVenda.Items.AddRange(novaMarca.ToArray());
-
-            }
-
-            if (cbxInstrumento_CompraVenda.SelectedIndex == 7)
-            {
-                List<string> novaMarca = new List<string> { "Yamaha", "Cassio" };
-
-                cbxMarca_CompraVenda.Items.Clear();
-                cbxMarca_CompraVenda.Items.AddRange(novaMarca.ToArray());
-
-            if (cbxInstrumento_CompraVenda.SelectedIndex == 4)
-            {
-                List<string> novaMarca = new List<string> { "Yamaha", "Eastman" };
-
-                cbxMarca_CompraVenda.Items.Clear();
-                cbxMarca_CompraVenda.Items.AddRange(novaMarca.ToArray());
-
-            }
-            if (cbxInstrumento_CompraVenda.SelectedIndex == 4)
-            {
-                List<string> novaMarca = new List<string> { "Yamaha", "Eastman" };
-
-                cbxMarca_CompraVenda.Items.Clear();
-                cbxMarca_CompraVenda.Items.AddRange(novaMarca.ToArray());
-
-            }
-            if (cbxInstrumento_CompraVenda.SelectedIndex == 4)
-            {
-                List<string> novaMarca = new List<string> { "Yamaha", "Eastman" };
-
-                        txtPreco_CompraVenda.Text = precoD;
-                        break;
-                    }
-                }
-
+     
                     if (marca == marcaSelecionada)
                     {
-
-            }
-
-            if (cbxInstrumento_CompraVenda.SelectedIndex == 6)
-            {
-
-                List<string> novaMarca = new List<string> { "Yamaha", "GEWA" };
-
-                cbxMarca_CompraVenda.Items.Clear();
-                cbxMarca_CompraVenda.Items.AddRange(novaMarca.ToArray());
-
-            }
-
-            if (cbxInstrumento_CompraVenda.SelectedIndex == 7)
-            {
-                List<string> novaMarca = new List<string> { "Yamaha", "Cassio" };
-
-                cbxMarca_CompraVenda.Items.Clear();
-                cbxMarca_CompraVenda.Items.AddRange(novaMarca.ToArray());
-
+                        txtPreco_CompraVenda.Text = precoD;
+                        break;
+                    }
+                }
             }
             else
             {

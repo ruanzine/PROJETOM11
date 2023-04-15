@@ -229,6 +229,7 @@ namespace M11_PROJETOFINAL
                 foreach (Manutencoes item in Manutencoes.Lista.Lista_Manu)
                 {
                     dgvManu.Rows.Add(item.Nome, item.Tel.ToString(), item.Instrumento, item.Defeito,
+<<<<<<< HEAD
                         item.Descricao, item.Preco);
 
                 }
@@ -300,14 +301,84 @@ namespace M11_PROJETOFINAL
                     string marca = dados[0];
                     string precoD = dados[1];
                     
-
-                    if (marca == marcaSelecionada)
-                    {
+            if (cbxInstrumento_CompraVenda.SelectedIndex == 4)
+            {
+                List<string> novaMarca = new List<string> { "Yamaha", "Eastman" };
 
                         txtPreco_CompraVenda.Text = precoD;
                         break;
                     }
                 }
+            if (cbxInstrumento_CompraVenda.SelectedIndex == 4)
+            {
+                List<string> novaMarca = new List<string> { "Yamaha", "Eastman" };
+
+            }
+
+            if (cbxInstrumento_CompraVenda.SelectedIndex == 6)
+            {
+
+                List<string> novaMarca = new List<string> { "Yamaha", "GEWA" };
+
+                cbxMarca_CompraVenda.Items.Clear();
+                cbxMarca_CompraVenda.Items.AddRange(novaMarca.ToArray());
+
+            }
+
+            if (cbxInstrumento_CompraVenda.SelectedIndex == 7)
+            {
+                List<string> novaMarca = new List<string> { "Yamaha", "Cassio" };
+
+                cbxMarca_CompraVenda.Items.Clear();
+                cbxMarca_CompraVenda.Items.AddRange(novaMarca.ToArray());
+
+            if (cbxInstrumento_CompraVenda.SelectedIndex == 4)
+            {
+                List<string> novaMarca = new List<string> { "Yamaha", "Eastman" };
+
+                cbxMarca_CompraVenda.Items.Clear();
+                cbxMarca_CompraVenda.Items.AddRange(novaMarca.ToArray());
+
+            }
+            if (cbxInstrumento_CompraVenda.SelectedIndex == 4)
+            {
+                List<string> novaMarca = new List<string> { "Yamaha", "Eastman" };
+
+                cbxMarca_CompraVenda.Items.Clear();
+                cbxMarca_CompraVenda.Items.AddRange(novaMarca.ToArray());
+
+            }
+            if (cbxInstrumento_CompraVenda.SelectedIndex == 4)
+            {
+                List<string> novaMarca = new List<string> { "Yamaha", "Eastman" };
+
+                        txtPreco_CompraVenda.Text = precoD;
+                        break;
+                    }
+                }
+
+                    if (marca == marcaSelecionada)
+                    {
+
+            }
+
+            if (cbxInstrumento_CompraVenda.SelectedIndex == 6)
+            {
+
+                List<string> novaMarca = new List<string> { "Yamaha", "GEWA" };
+
+                cbxMarca_CompraVenda.Items.Clear();
+                cbxMarca_CompraVenda.Items.AddRange(novaMarca.ToArray());
+
+            }
+
+            if (cbxInstrumento_CompraVenda.SelectedIndex == 7)
+            {
+                List<string> novaMarca = new List<string> { "Yamaha", "Cassio" };
+
+                cbxMarca_CompraVenda.Items.Clear();
+                cbxMarca_CompraVenda.Items.AddRange(novaMarca.ToArray());
+
             }
             else
             {

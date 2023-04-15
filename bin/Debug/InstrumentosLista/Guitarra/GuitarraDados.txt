@@ -1,0 +1,10 @@
+Fender:999,98
+Gibson:1999,99
+PRS:2499,99
+Ibanez:1999,99
+Jackson:1289,99
+ESP:1199,98
+Schecter:999,99
+Epiphone:799,99
+Gretsch:1999,99
+Music Man:2.259,99

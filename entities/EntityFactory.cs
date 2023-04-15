@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace M11_PROJETOFINAL.entities
 {
     /// <summary>
-    /// This factory class aims to provide the correct user class based on a given username.
+    /// Esta classe factory tem o objetivo de prover o classe do Usuárop correta baseado num username dado
     /// </summary>
     internal class EntityFactory
     {
 
         /// <summary>
         /// The dictionary responsible for holding all the usernames mapped to their respective user classes.
+        /// Esse dicionário é responsável por guardar todos os usernames mapeados para suas classes respetivas.
         /// </summary>
         public Dictionary<string, User> EntityUserMapping { get; set; } = new Dictionary<string, User>()
         {
@@ -22,12 +20,12 @@ namespace M11_PROJETOFINAL.entities
         };
 
         /// <summary>
-        /// Acesses the EntityUserMapping map and returns the entity class matching the username provided. If it isn't found,
-        /// return null.
-        /// </summary>
-        /// <param name="username">The username to find the matching class for.</param>
-        /// <returns>The user class matching the username</returns>
-        public User GetUserClass(string username) => 
+        /// Acessa o mapa EntityUserMapping e retorna a classe Entity que está conectada ao username provido.
+        /// Se não é encontrado, retorna null.
+        /// </summary> 
+        /// <param name="username">O username para encontrar a classe</param>
+        /// <returns>Classe conectada ao username</returns>
+        public User GetUserClass(string username) =>
             EntityUserMapping.Keys.ToList().Contains(username.ToLower()) ? EntityUserMapping[username.ToLower()] : null;
 
     }

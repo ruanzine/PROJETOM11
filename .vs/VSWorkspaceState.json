@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\gui"
   ],
-  "SelectedNode": "\\App.config",
+  "SelectedNode": "\\gui\\FormLogin.cs",
   "PreviewInSolutionExplorer": false
 }

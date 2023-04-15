@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfCompra_Venda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Compra_Venda>
+    <Preco>299899</Preco>
+    <Nome>shfdiosajh</Nome>
+    <Tel>549834758</Tel>
+    <Instrumento>Violoncelo</Instrumento>
+    <Tipo>Venda</Tipo>
+    <Marca>Bellafina</Marca>
+  </Compra_Venda>
+  <Compra_Venda>
+    <Preco>299899</Preco>
+    <Nome>shfdiosajh</Nome>
+    <Tel>549834758</Tel>
+    <Instrumento>Violoncelo</Instrumento>
+    <Tipo>Venda</Tipo>
+    <Marca>Bellafina</Marca>
+  </Compra_Venda>
+  <Compra_Venda>
+    <Preco>299999</Preco>
+    <Nome>asdfsfd</Nome>
+    <Tel>234234234</Tel>
+    <Instrumento>Guitarra Acústica</Instrumento>
+    <Tipo>Compra</Tipo>
+    <Marca>Gibson</Marca>
+  </Compra_Venda>
+</ArrayOfCompra_Venda>

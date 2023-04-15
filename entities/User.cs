@@ -7,23 +7,24 @@ namespace M11_PROJETOFINAL.entities
 {
     public abstract class User
     {
+
         public string Nome { get; set; }
 
-        public List<TabPage> Tabs { get; set; } 
+        public List<TabPage> Tabs { get; set; }
 
-        public User (params TabPage[] allowedTabs) => Tabs = allowedTabs.ToList<TabPage>();
-        
+        public User(params TabPage[] allowedTabs) => Tabs = allowedTabs.ToList<TabPage>();
+
         /// <summary>
-        /// Clears all the tabs currently inside the TabControl and adds all of the ones
-        /// present in the Tabs property
+        /// Limpa todas as tabs dentor do TabControl e adiciona todas as presentes na propriedade Tabs
         /// </summary>
         public virtual void FillTabs()
         {
-            Tabs.Clear();
+            FormInicial.INSTANCE.TabGeral.TabPages.Clear();
             Tabs.ForEach(FormInicial.INSTANCE.TabGeral.TabPages.Add);
+
         }
 
-        // TODO
+
         public string[] GetCredentials()
         {
             string[] credentials = new string[2];

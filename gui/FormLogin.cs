@@ -16,7 +16,7 @@ namespace M11_PROJETOFINAL.gui
             lblError.Visible = false;
             string username = txtUsername.Text;
             string password = txtPassword.Text;
-            
+
 
             User userClass = new EntityFactory().GetUserClass(username);
 
@@ -24,6 +24,7 @@ namespace M11_PROJETOFINAL.gui
             {
                 lblError.Text = "este nome de usuário não existe";
                 lblError.Visible = true;
+                txtUsername.Focus();
                 return;
             }
 
@@ -31,6 +32,8 @@ namespace M11_PROJETOFINAL.gui
             {
                 lblError.Text = "palavra-passe incorreta";
                 lblError.Visible = true;
+                txtPassword.Clear();
+                txtPassword.Focus();
                 return;
             }
 
@@ -38,6 +41,27 @@ namespace M11_PROJETOFINAL.gui
             userClass.FillTabs();
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+    
+        private void picShowPass_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPassword.PasswordChar = (char)0;
+        }
+
+        private void picShowPass_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtPassword.PasswordChar = '•';
+        }
+
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            lblError.Visible = false;
+        }
+
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            lblError.Visible = false;
         }
     }
 }

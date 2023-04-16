@@ -27,25 +27,25 @@ namespace M11_PROJETOFINAL.entities
 
         public string[] GetCredentials()
         {
-            string[] credentials = new string[2];
+            string[] credenciais = new string[2];
 
-            string fileName = Nome + ".txt";
+            string nomeArquivo = Nome + ".txt";
 
-            if (File.Exists(fileName))
+            if (File.Exists(nomeArquivo))
             {
-                string[] lines = File.ReadAllLines(fileName);
+                string[] lines = File.ReadAllLines(nomeArquivo);
 
                 if (lines.Length >= 2)
                 {
-                    credentials[0] = lines[0];
-                    credentials[1] = lines[1];
+                    credenciais[0] = lines[0];
+                    credenciais[1] = lines[1];
                 }
             }
             else
             {
-                credentials = null;
+                credenciais = null;
             }
-            return credentials;
+            return credenciais;
         }
     }
 }

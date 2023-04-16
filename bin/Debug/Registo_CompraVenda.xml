@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ArrayOfCompra_Venda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Compra_Venda>
+    <Preco>2499,99</Preco>
+    <Nome>Fernando</Nome>
+    <Tel>947564856</Tel>
+    <Instrumento>Violino</Instrumento>
+    <Tipo>Compra</Tipo>
+    <Marca>Yamaha</Marca>
+  </Compra_Venda>
+</ArrayOfCompra_Venda>

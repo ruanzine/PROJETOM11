@@ -100,9 +100,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\showPasswordPic.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Design_sem_nome__8_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-password-show-svgrepo-com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showPassPicture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruanzinconcertos_Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userProfilePic.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

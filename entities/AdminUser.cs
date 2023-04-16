@@ -6,7 +6,7 @@
         /// Classe herdeira de User. Possui as tabs a qual o username «admin» possui acesso.
         /// </summary>
         public AdminUser() : base(FormInicial.INSTANCE.tabInicio, FormInicial.INSTANCE.tabCompra_Venda, FormInicial.INSTANCE.tabHistorico,
-            FormInicial.INSTANCE.tabManu, FormInicial.INSTANCE.tabEmManu, FormInicial.INSTANCE.tabDistribuidores) =>
+            FormInicial.INSTANCE.tabManu, FormInicial.INSTANCE.tabEmManu) =>
             Nome = "Admin";
     }
 }

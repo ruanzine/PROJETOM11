@@ -30,7 +30,6 @@ namespace M11_PROJETOFINAL
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
 
-
             if (File.Exists("Registo_CompraVenda.xml"))
             {
                 FileStream ficheiroExistente = new FileStream("Registo_CompraVenda.xml", FileMode.Open, FileAccess.Read);
@@ -50,12 +49,8 @@ namespace M11_PROJETOFINAL
             }
         }
 
-           
 
-
-
-
-            private void FormInicial_Load(object sender, EventArgs e)
+        private void FormInicial_Load(object sender, EventArgs e)
         {
             FormLogin loginForm = new FormLogin { StartPosition = FormStartPosition.CenterScreen };
 
@@ -116,7 +111,7 @@ namespace M11_PROJETOFINAL
 
                 Compra_Venda.Lista.Lista_CompraVenda.Add(novaCompra_Venda);
 
-                
+
                 //Criar uma nova instancia de filestream para escrita
                 FileStream ficheiro_CompraVenda = new FileStream("Registo_CompraVenda.xml", FileMode.Create, FileAccess.Write);
                 //Criar uma instancia XML do tipo Compra_Venda
@@ -171,7 +166,7 @@ namespace M11_PROJETOFINAL
 
 
                 // Verifica se o arquivo XML existe antes de desserializar os dados existentes
-                
+
 
                 Manutencoes.Lista.Lista_Manu.Add(novaManutencao);
 
@@ -230,7 +225,7 @@ namespace M11_PROJETOFINAL
 
         private void bttAtualizar_Conserto_Click(object sender, EventArgs e)
         {
-            
+
 
             try
             {
@@ -285,8 +280,8 @@ namespace M11_PROJETOFINAL
                 cbxMarca_CompraVenda.Items.AddRange(marcas.ToArray());
                 cbxMarca_CompraVenda.Enabled = true;
             }
-            else if(nomeArquivo == "Dados.txt")
-            {   
+            else if (nomeArquivo == "Dados.txt")
+            {
                 return;
             }
             else
@@ -314,7 +309,7 @@ namespace M11_PROJETOFINAL
                     string[] dados = linha.Split(':');
                     string marca = dados[0];
                     string precoD = dados[1];
-     
+
                     if (marca == marcaSelecionada)
                     {
                         txtPreco_CompraVenda.Text = precoD;
@@ -392,14 +387,6 @@ namespace M11_PROJETOFINAL
             }
         }
 
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
+
 }

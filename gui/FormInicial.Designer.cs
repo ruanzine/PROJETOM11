@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInicial));
             this.tabEmManu = new System.Windows.Forms.TabPage();
             this.bttAtualizar_Conserto = new System.Windows.Forms.Button();
             this.dgvManu = new System.Windows.Forms.DataGridView();
@@ -38,8 +39,10 @@
             this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label28 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabManu = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbxInstrumentos_Manu = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -67,8 +70,10 @@
             this.Registo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label27 = new System.Windows.Forms.Label();
             this.bttAtualizar_Historico = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabCompra_Venda = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.cbxTipo_CompraVenda = new System.Windows.Forms.ComboBox();
             this.label29 = new System.Windows.Forms.Label();
@@ -87,40 +92,36 @@
             this.label17 = new System.Windows.Forms.Label();
             this.txtNome_CompraVenda = new System.Windows.Forms.TextBox();
             this.tabInicio = new System.Windows.Forms.TabPage();
+            this.lbluser = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.TabGeral = new System.Windows.Forms.TabControl();
             this.picbUsuario = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.lbluser = new System.Windows.Forms.Label();
+            this.TabGeral = new System.Windows.Forms.TabControl();
             this.tabEmManu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabManu.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabHistorico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabCompra_Venda.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.tabInicio.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.TabGeral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbUsuario)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.TabGeral.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabEmManu
@@ -225,6 +226,16 @@
             this.label28.TabIndex = 48;
             this.label28.Text = "HISTÓRICO DE MANUTENÇÃO";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::M11_PROJETOFINAL.Properties.Resources.Design_sem_nome__8__removebg_preview;
+            this.pictureBox5.Location = new System.Drawing.Point(567, -22);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(241, 123);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 51;
+            this.pictureBox5.TabStop = false;
+            // 
             // tabManu
             // 
             this.tabManu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -248,6 +259,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(284, 438);
             this.panel2.TabIndex = 41;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::M11_PROJETOFINAL.Properties.Resources.ruanzinconcertos_Logo1;
+            this.pictureBox2.Location = new System.Drawing.Point(14, 27);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(256, 384);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 38;
+            this.pictureBox2.TabStop = false;
             // 
             // groupBox1
             // 
@@ -548,6 +569,16 @@
             this.bttAtualizar_Historico.UseVisualStyleBackColor = false;
             this.bttAtualizar_Historico.Click += new System.EventHandler(this.bttAtualizar_Historico_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::M11_PROJETOFINAL.Properties.Resources.Design_sem_nome__8__removebg_preview;
+            this.pictureBox4.Location = new System.Drawing.Point(567, -22);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(241, 123);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 48;
+            this.pictureBox4.TabStop = false;
+            // 
             // tabCompra_Venda
             // 
             this.tabCompra_Venda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -571,6 +602,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(284, 438);
             this.panel1.TabIndex = 40;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::M11_PROJETOFINAL.Properties.Resources.ruanzinconcertos_Logo1;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(256, 384);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBox5
             // 
@@ -794,6 +835,17 @@
             this.tabInicio.Text = "Início";
             this.tabInicio.ToolTipText = "Ecrã principal do sistema de registos";
             // 
+            // lbluser
+            // 
+            this.lbluser.AutoSize = true;
+            this.lbluser.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluser.ForeColor = System.Drawing.Color.LightCyan;
+            this.lbluser.Location = new System.Drawing.Point(496, 288);
+            this.lbluser.Name = "lbluser";
+            this.lbluser.Size = new System.Drawing.Size(70, 23);
+            this.lbluser.TabIndex = 46;
+            this.lbluser.Text = "Usuário:";
+            // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
@@ -816,6 +868,16 @@
             this.label21.TabIndex = 43;
             this.label21.Text = "INÍCIO";
             // 
+            // picbUsuario
+            // 
+            this.picbUsuario.Image = global::M11_PROJETOFINAL.Properties.Resources.userProfilePic;
+            this.picbUsuario.Location = new System.Drawing.Point(492, 144);
+            this.picbUsuario.Name = "picbUsuario";
+            this.picbUsuario.Size = new System.Drawing.Size(136, 137);
+            this.picbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbUsuario.TabIndex = 42;
+            this.picbUsuario.TabStop = false;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -824,6 +886,16 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(284, 438);
             this.panel4.TabIndex = 41;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::M11_PROJETOFINAL.Properties.Resources.ruanzinconcertos_Logo1;
+            this.pictureBox3.Location = new System.Drawing.Point(16, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(256, 384);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 37;
+            this.pictureBox3.TabStop = false;
             // 
             // TabGeral
             // 
@@ -839,92 +911,26 @@
             this.TabGeral.Size = new System.Drawing.Size(800, 467);
             this.TabGeral.TabIndex = 2;
             // 
-            // picbUsuario
-            // 
-            this.picbUsuario.Image = global::M11_PROJETOFINAL.Properties.Resources.userProfilePic;
-            this.picbUsuario.Location = new System.Drawing.Point(492, 144);
-            this.picbUsuario.Name = "picbUsuario";
-            this.picbUsuario.Size = new System.Drawing.Size(136, 137);
-            this.picbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picbUsuario.TabIndex = 42;
-            this.picbUsuario.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::M11_PROJETOFINAL.Properties.Resources.ruanzinconcertos_Logo1;
-            this.pictureBox3.Location = new System.Drawing.Point(16, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(256, 384);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 37;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::M11_PROJETOFINAL.Properties.Resources.ruanzinconcertos_Logo1;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 384);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::M11_PROJETOFINAL.Properties.Resources.Design_sem_nome__8__removebg_preview;
-            this.pictureBox4.Location = new System.Drawing.Point(567, -22);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(241, 123);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 48;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::M11_PROJETOFINAL.Properties.Resources.ruanzinconcertos_Logo1;
-            this.pictureBox2.Location = new System.Drawing.Point(14, 27);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(256, 384);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 38;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::M11_PROJETOFINAL.Properties.Resources.Design_sem_nome__8__removebg_preview;
-            this.pictureBox5.Location = new System.Drawing.Point(567, -22);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(241, 123);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 51;
-            this.pictureBox5.TabStop = false;
-            // 
-            // lbluser
-            // 
-            this.lbluser.AutoSize = true;
-            this.lbluser.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbluser.ForeColor = System.Drawing.Color.LightCyan;
-            this.lbluser.Location = new System.Drawing.Point(496, 288);
-            this.lbluser.Name = "lbluser";
-            this.lbluser.Size = new System.Drawing.Size(70, 23);
-            this.lbluser.TabIndex = 46;
-            this.lbluser.Text = "Usuário:";
-            // 
             // FormInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 467);
             this.Controls.Add(this.TabGeral);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(816, 506);
+            this.MinimumSize = new System.Drawing.Size(816, 506);
             this.Name = "FormInicial";
             this.Text = "RuanzinConsertos - Registos";
             this.Load += new System.EventHandler(this.FormInicial_Load);
             this.tabEmManu.ResumeLayout(false);
             this.tabEmManu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.tabManu.ResumeLayout(false);
             this.tabManu.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox11.ResumeLayout(false);
@@ -934,9 +940,11 @@
             this.tabHistorico.ResumeLayout(false);
             this.tabHistorico.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tabCompra_Venda.ResumeLayout(false);
             this.tabCompra_Venda.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -945,14 +953,10 @@
             this.groupBox13.PerformLayout();
             this.tabInicio.ResumeLayout(false);
             this.tabInicio.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.TabGeral.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picbUsuario)).EndInit();
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.TabGeral.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

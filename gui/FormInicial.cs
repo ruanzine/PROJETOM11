@@ -99,15 +99,7 @@ namespace M11_PROJETOFINAL
 
                 // Caso o ficheiro XML Registo_CompraVenda exista, essa validação irá fazer a Desserialização do ficheiro,
                 // adicionar a lista
-                if (File.Exists("Registo_CompraVenda.xml"))
-                {
-                    FileStream ficheiroExistente = new FileStream("Registo_CompraVenda.xml", FileMode.Open, FileAccess.Read);
-                    XmlSerializer serie_ = new XmlSerializer(typeof(List<Compra_Venda>));
-                    List<Compra_Venda> listaExistente = (List<Compra_Venda>)serie_.Deserialize(ficheiroExistente);
-                    Compra_Venda.Lista.Lista_CompraVenda.AddRange(listaExistente);
-                    ficheiroExistente.Close();
-                }
-
+              
 
                 Compra_Venda.Lista.Lista_CompraVenda.Add(novaCompra_Venda);
 

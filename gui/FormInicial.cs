@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 namespace M11_PROJETOFINAL
 {
     public partial class FormInicial : Form
-    { 
+    {
         /// <summary>
         /// É a instância singleton da classe FormInicial para poder ser usada em outras partes do programa
         /// </summary>
@@ -43,6 +43,11 @@ namespace M11_PROJETOFINAL
                 Manutencoes.Lista.Lista_Manu.AddRange(listaExistente);
                 ficheiroExistente.Close();
             }
+
+            dgvHistorico.AllowUserToResizeColumns = false;
+            dgvHistorico.AllowUserToResizeRows= false;
+            dgvManu.AllowUserToResizeRows= false;
+            dgvManu.AllowUserToResizeColumns = false;
         }
 
         /// <summary>
@@ -78,59 +83,50 @@ namespace M11_PROJETOFINAL
         /// <param name="e">Argumentos do evento.</param>
         private void bttGuardar_CompraVenda_Click(object sender, EventArgs e)
         {
-            bool dadosValidos = true;
 
-            // Verifica se todos os campos obrigatórios foram preenchidos.
-            if (txtNome_CompraVenda.Text == "" || cbxInstrumento_CompraVenda.Text == ""
-                || cbxMarca_CompraVenda.Text == "" || txtPreco_CompraVenda.Text == "" || cbxTipo_CompraVenda.Text == "")
+            if (!CamposObrigatoriosPreenchidos_CompraVenda())
             {
-                // Se algum campo obrigatório não foi preenchido, exibe uma mensagem de erro.
                 MessageBox.Show("Dados incompletos", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
-            // Verifica se o número de telefone tem pelo menos 9 caracteres.
-            else if (txtTel_CompraVenda.Text.Length < 9 | txtTel_CompraVenda.Text == "")
+            if (!ValidarTelefone(txtTel_CompraVenda.Text))
             {
-                // Se o número de telefone não tiver pelo menos 9 caracteres, exibe uma mensagem de erro
-                MessageBox.Show("Número de telemóvel incorreto", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                dadosValidos = false;
+                MessageBox.Show("Número de telemóvel inválido", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+
+            if (!ValidarPreco(txtPreco_CompraVenda.Text))
             {
-                // Cria um novo objeto Compra_Venda e preenche seus campos com os valores dos controles do formulário.
-                Compra_Venda novaCompra_Venda = new Compra_Venda();
-                novaCompra_Venda.Nome = txtNome_CompraVenda.Text;
-                novaCompra_Venda.Tel = txtTel_CompraVenda.Text;
-                novaCompra_Venda.Instrumento = cbxInstrumento_CompraVenda.Text;
-                novaCompra_Venda.Marca = cbxMarca_CompraVenda.Text;
-                novaCompra_Venda.Preco = txtPreco_CompraVenda.Text;
+                MessageBox.Show("Preço inválido", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-                // Define o tipo da Compra_Venda com base na seleção do controle ComboBox
-                if (cbxTipo_CompraVenda.Text == "Compra") novaCompra_Venda.Tipo = cbxTipo_CompraVenda.Text;
-                if (cbxTipo_CompraVenda.Text == "Venda") novaCompra_Venda.Tipo = cbxTipo_CompraVenda.Text;
+            // Cria um novo objeto Compra_Venda e preenche seus campos com os valores dos controles do formulário.
+            Compra_Venda novaCompra_Venda = new Compra_Venda();
+            novaCompra_Venda.Nome = txtNome_CompraVenda.Text;
+            novaCompra_Venda.Tel = txtTel_CompraVenda.Text;
+            novaCompra_Venda.Instrumento = cbxInstrumento_CompraVenda.Text;
+            novaCompra_Venda.Marca = cbxMarca_CompraVenda.Text;
+            novaCompra_Venda.Preco = txtPreco_CompraVenda.Text;
 
-                // Adiciona a nova entrada de Compra/Venda à lista estática Lista_CompraVenda da classe Compra_Venda.
-                Compra_Venda.Lista.Lista_CompraVenda.Add(novaCompra_Venda);
+            // Define o tipo da Compra_Venda com base na seleção do controle ComboBox
+            if (cbxTipo_CompraVenda.Text == "Compra") novaCompra_Venda.Tipo = cbxTipo_CompraVenda.Text;
+            if (cbxTipo_CompraVenda.Text == "Venda") novaCompra_Venda.Tipo = cbxTipo_CompraVenda.Text;
 
-                // Cria um novo arquivo XML de registro de Compra/Venda e salva a lista de Compra_Venda nele.
-                FileStream ficheiro_CompraVenda = new FileStream("Registo_CompraVenda.xml", FileMode.Create, FileAccess.Write);
+            // Adiciona a nova entrada de Compra/Venda à lista estática Lista_CompraVenda da classe Compra_Venda.
+            Compra_Venda.Lista.Lista_CompraVenda.Add(novaCompra_Venda);
+
+            // Cria um novo arquivo XML de registro de Compra/Venda e salva a lista de Compra_Venda nele.
+            using (FileStream ficheiro_CompraVenda = new FileStream("Registo_CompraVenda.xml", FileMode.Create, FileAccess.Write))
+            {
                 XmlSerializer serie_CompraVenda = new XmlSerializer(typeof(List<Compra_Venda>));
                 serie_CompraVenda.Serialize(ficheiro_CompraVenda, Compra_Venda.Lista.Lista_CompraVenda);
                 ficheiro_CompraVenda.Close();
             }
 
-            // Limpa os campos do formulário se os dados forem válidos.
-            if (dadosValidos)
-            {
-                txtNome_CompraVenda.Clear();
-                txtTel_CompraVenda.Clear();
-                txtPreco_CompraVenda.Clear();
-                cbxMarca_CompraVenda.SelectedIndex = -1;
-                cbxInstrumento_CompraVenda.SelectedIndex = -1;
-                cbxTipo_CompraVenda.SelectedIndex = -1;
-                txtDescricao.Clear();
-            }
-
+            LimparCampos();
+               
         }
 
 
@@ -141,55 +137,49 @@ namespace M11_PROJETOFINAL
         /// <param name="e">Os argumentos do evento</param
         private void bttGuardarManu_Click(object sender, EventArgs e)
         {
-            bool dadosValidos = true;
-
-            // Verifica se algum dos campos obrigatórios está vazio
-            if (txtNome_Manu.Text == "" || cbxInstrumentos_Manu.Text == "" || cbxDefeitos.Text == "" || txtDescricao.Text == "" || txtPreco_Manu.Text == "")
+            if (!CamposObrigatoriosPreenchidos_Manu())
             {
                 MessageBox.Show("Dados incompletos", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
-            // Validação para caso a quantidade de caracteres na textbox número seja menor que 9 ou vazia
-            else if (txtTel_Manu.Text.Length < 9 | txtTel_Manu.Text == "")
+            if (!ValidarTelefone(txtTel_Manu.Text))
             {
-                MessageBox.Show("Número de telemóvel incorreto", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                dadosValidos = false;
+                MessageBox.Show("Número de telemóvel inválido", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
-            else
+            if (!ValidarPreco(txtPreco_Manu.Text))
             {
-                // Cria uma nova instância da classe Manutencoes com os dados informados pelo usuário
-                Manutencoes novaManutencao = new Manutencoes();
-                novaManutencao.Nome = txtNome_Manu.Text;
-                novaManutencao.Tel = txtTel_Manu.Text;
-                novaManutencao.Instrumento = cbxInstrumentos_Manu.Text;
-                novaManutencao.Defeito = cbxDefeitos.Text;
-                novaManutencao.Descricao = txtDescricao.Text;
-                novaManutencao.Preco = txtPreco_Manu.Text;
+                MessageBox.Show("Preço inválido", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
+            // Cria uma nova instância da classe Manutencoes com os dados informados pelo usuário
+            Manutencoes novaManutencao = new Manutencoes();
+            novaManutencao.Nome = txtNome_Manu.Text;
+            novaManutencao.Tel = txtTel_Manu.Text;
+            novaManutencao.Instrumento = cbxInstrumentos_Manu.Text;
+            novaManutencao.Defeito = cbxDefeitos.Text;
+            novaManutencao.Descricao = txtDescricao.Text;
+            novaManutencao.Preco = txtPreco_Manu.Text;
 
+            // Adiciona a nova manutenção à lista de manutenções
+            Manutencoes.Lista.Lista_Manu.Add(novaManutencao);
 
-                // Adiciona a nova manutenção à lista de manutenções
-                Manutencoes.Lista.Lista_Manu.Add(novaManutencao);
-
-                // Serializa a lista de manutenções em um arquivo XML
-                FileStream ficheiro_Manutencoes = new FileStream("Registo_Manutencoes.xml", FileMode.Create, FileAccess.Write);
+            // Serializa a lista de manutenções em um arquivo XML
+            using (FileStream ficheiro_Manutencoes = new FileStream("Registo_Manutencoes.xml", FileMode.Create, FileAccess.Write))
+            {
                 XmlSerializer serie_Manutencoes = new XmlSerializer(typeof(List<Manutencoes>));
                 serie_Manutencoes.Serialize(ficheiro_Manutencoes, Manutencoes.Lista.Lista_Manu);
                 ficheiro_Manutencoes.Close();
             }
 
-            // Limpa os campos do formulário se os dados forem válidos.
-            if (dadosValidos)
-            {
-                txtNome_Manu.Clear();
-                txtTel_Manu.Clear();
-                txtPreco_Manu.Clear();
-                cbxDefeitos.SelectedIndex = -1;
-                cbxInstrumentos_Manu.SelectedIndex = -1;
-                txtDescricao.Clear();
-            }
+            LimparCampos();
         }
+
+      
+
 
         /// <summary>
         /// Event handler que atualiza o histórico de compras e vendas na tabela do formulário.
@@ -213,7 +203,7 @@ namespace M11_PROJETOFINAL
                 // Adiciona cada item da lista 'Lista_CompraVenda' à DataGridView 'dgvHistorico', preenchendo cada célula com seus respectivos atributos.
                 foreach (Compra_Venda item in Compra_Venda.Lista.Lista_CompraVenda)
                 {
-                    
+
                     dgvHistorico.Rows.Add(item.Nome, item.Tel.ToString(), item.Instrumento, item.Marca, item.Preco,
                     item.Tipo);
 
@@ -222,10 +212,10 @@ namespace M11_PROJETOFINAL
             }
             catch (FileNotFoundException)
             {
-          
+
                 // Mostra uma caixa de mensagem de erro indicando que não existem dados registados.
                 MessageBox.Show("Não existem dados registados", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+
             }
         }
 
@@ -237,8 +227,6 @@ namespace M11_PROJETOFINAL
         /// <param name="e">Os argumentos do evento</param>
         private void bttAtualizar_Conserto_Click(object sender, EventArgs e)
         {
-            
-
             try
             {
                 // Limpa as linhas da tabela antes de exibir as informações atualizadas
@@ -255,7 +243,6 @@ namespace M11_PROJETOFINAL
                 {
                     dgvManu.Rows.Add(item.Nome, item.Tel.ToString(), item.Instrumento, item.Defeito,
                         item.Descricao, item.Preco);
-
                 }
 
             }
@@ -450,6 +437,77 @@ namespace M11_PROJETOFINAL
             }
         }
 
-    }
+        /// <summary>
+        /// Verifica se todos os campos obrigatórios foram preenchidos para a seção "Compra e Venda".
+        /// </summary>
+        /// <returns>Retorna "true" se todos os campos obrigatórios estiverem preenchidos e "false" caso contrário.</returns>
+        private bool CamposObrigatoriosPreenchidos_CompraVenda()
+        {
+            return !string.IsNullOrEmpty(txtNome_CompraVenda.Text)
+                && !string.IsNullOrEmpty(txtTel_CompraVenda.Text)
+                && !string.IsNullOrEmpty(txtPreco_CompraVenda.Text)
+                && cbxTipo_CompraVenda.SelectedIndex != -1
+                && cbxInstrumento_CompraVenda.SelectedIndex != -1;
+        }
 
+        /// <summary>
+        /// Verifica se todos os campos obrigatórios foram preenchidos para a seção "Manutenções".
+        /// </summary>
+        /// <returns>Retorna "true" se todos os campos obrigatórios estiverem preenchidos e "false" caso contrário.</returns>
+        private bool CamposObrigatoriosPreenchidos_Manu()
+        {
+            return !string.IsNullOrEmpty(txtNome_Manu.Text)
+                && !string.IsNullOrEmpty(txtTel_Manu.Text)
+                && !string.IsNullOrEmpty(txtPreco_Manu.Text)
+                && cbxInstrumentos_Manu.SelectedIndex != -1
+                && cbxDefeitos.SelectedIndex != -1
+                && !string.IsNullOrEmpty(txtDescricao.Text);
+        }
+
+        /// <summary>
+        /// Verifica se o número de telefone é válido.
+        /// </summary>
+        /// <param name="telefone">O número de telefone a ser validado.</param>
+        /// <returns>Retorna "true" se o número de telefone tiver pelo menos 9 caracteres e "false" caso contrário.</returns>
+        private bool ValidarTelefone(string telefone)
+        {
+            return telefone.Length >= 9;
+        }
+
+        /// <summary>
+        /// Verifica se o preço é válido.
+        /// </summary>
+        /// <param name="preco">O preço a ser validado.</param>
+        /// <returns>Retorna "true" se o preço não for nulo, vazio ou terminar com vírgula e "false" caso contrário.</returns>
+        private bool ValidarPreco(string preco)
+        {
+            if (string.IsNullOrEmpty(preco) || preco.EndsWith(","))
+            {
+                return false;
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// Limpa todos os campos do formulário.
+        /// </summary>
+        private void LimparCampos()
+        {
+            txtNome_Manu.Clear();
+            txtTel_Manu.Clear();
+            txtPreco_Manu.Clear();
+            cbxInstrumentos_Manu.SelectedIndex = -1;
+            cbxDefeitos.SelectedIndex = -1;
+            txtDescricao.Clear();
+
+            txtNome_CompraVenda.Clear();
+            txtTel_CompraVenda.Clear();
+            txtPreco_CompraVenda.Clear();
+            cbxTipo_CompraVenda.SelectedIndex = -1;
+            cbxInstrumento_CompraVenda.SelectedIndex = -1;
+            cbxMarca_CompraVenda.SelectedIndex = -1;
+        }
+
+        
+    }
 }

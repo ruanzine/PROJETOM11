@@ -2,26 +2,10 @@
 <ArrayOfCompra_Venda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Compra_Venda>
     <Preco>499,99</Preco>
-    <Nome>porasd</Nome>
-    <Tel>545555555</Tel>
+    <Nome>ifjasij</Nome>
+    <Tel>583458384</Tel>
     <Instrumento>Contrabaixo</Instrumento>
-    <Tipo>Venda</Tipo>
+    <Tipo>Compra</Tipo>
     <Marca>Warwick</Marca>
-  </Compra_Venda>
-  <Compra_Venda>
-    <Preco>2499,99</Preco>
-    <Nome>gdfhfg</Nome>
-    <Tel>798798789</Tel>
-    <Instrumento>Piano Digital</Instrumento>
-    <Tipo>Venda</Tipo>
-    <Marca>Kawai</Marca>
-  </Compra_Venda>
-  <Compra_Venda>
-    <Preco>2999,99</Preco>
-    <Nome>Ruana</Nome>
-    <Tel>345345334</Tel>
-    <Instrumento>Guitarra Acústica</Instrumento>
-    <Tipo>Venda</Tipo>
-    <Marca>Gibson</Marca>
   </Compra_Venda>
 </ArrayOfCompra_Venda>

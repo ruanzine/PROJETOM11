@@ -50,14 +50,13 @@ namespace M11_PROJETOFINAL
         }
 
         /// <summary>
-        /// Este é um método do evento Load de um formulário (no caso, FormInicial). Ele é executado quando o formulário é carregado na memória.
-        /// O código cria uma nova instância do formulário FormLogin e define sua posição inicial no centro da tela.
-        /// Em seguida, exibe o formulário de login utilizando o método ShowDialog(), que retorna um valor do tipo DialogResult indicando se o usuário clicou no botão OK ou Cancelar.
-        /// Se o usuário clicou em OK, o código exibe o formulário inicial chamando o método Show() do próprio formulário (this). 
-        /// Caso contrário, o formulário é fechado chamando o método Close() também do próprio formulário(this).
+        /// Método que é executado quando o formulário principal é carregado.
+        /// Cria uma instância do FormLogin, o coloca na posição central da tela e exibe-o.
+        /// Caso o diálogo retorne DialogResult.OK, o formulário principal é exibido.
+        /// Caso contrário, o formulário é fechado.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">O objeto que acionou o evento.</param>
+        /// <param name="e">Os argumentos do evento.</param>
         private void FormInicial_Load(object sender, EventArgs e)
         {
             FormLogin loginForm = new FormLogin { StartPosition = FormStartPosition.CenterScreen };

@@ -9,11 +9,7 @@ using System.Xml.Serialization;
 namespace M11_PROJETOFINAL
 {
     public partial class FormInicial : Form
-    {
-
-        //CRIAR UM BOTAO PRA SAIR
-
-
+    { 
         /// <summary>
         /// É a instância singleton da classe FormInicial para poder ser usada em outras partes do programa
         /// </summary>

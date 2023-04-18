@@ -228,8 +228,8 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::M11_PROJETOFINAL.Properties.Resources.Design_sem_nome__8__removebg_preview;
-            this.pictureBox5.Location = new System.Drawing.Point(567, -22);
+            this.pictureBox5.Image = global::M11_PROJETOFINAL.Properties.Resources.logoSideWaysRC;
+            this.pictureBox5.Location = new System.Drawing.Point(567, -17);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(241, 123);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -571,8 +571,8 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::M11_PROJETOFINAL.Properties.Resources.Design_sem_nome__8__removebg_preview;
-            this.pictureBox4.Location = new System.Drawing.Point(567, -22);
+            this.pictureBox4.Image = global::M11_PROJETOFINAL.Properties.Resources.logoSideWaysRC;
+            this.pictureBox4.Location = new System.Drawing.Point(567, -17);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(241, 123);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

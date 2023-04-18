@@ -90,5 +90,10 @@ namespace M11_PROJETOFINAL.gui
         {
             lblError.Visible = false;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

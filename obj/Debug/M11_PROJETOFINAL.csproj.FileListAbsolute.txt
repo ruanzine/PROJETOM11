@@ -24,3 +24,17 @@ C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.exe
 C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.pdb
 C:\Users\Ruan\source\repos\PROJETOM11\bin\Debug\PgpsUtilsAEFC.dll
 C:\Users\Ruan\source\repos\PROJETOM11\obj\Debug\M11_PROJETOFINAL.csproj.CopyComplete
+C:\Users\Utilizador\source\Final\bin\Debug\M11_PROJETOFINAL.exe.config
+C:\Users\Utilizador\source\Final\bin\Debug\M11_PROJETOFINAL.exe
+C:\Users\Utilizador\source\Final\bin\Debug\M11_PROJETOFINAL.pdb
+C:\Users\Utilizador\source\Final\bin\Debug\PgpsUtilsAEFC.dll
+C:\Users\Utilizador\source\Final\obj\Debug\M11_PROJETOFINAL.csproj.AssemblyReference.cache
+C:\Users\Utilizador\source\Final\obj\Debug\M11_PROJETOFINAL.csproj.SuggestedBindingRedirects.cache
+C:\Users\Utilizador\source\Final\obj\Debug\M11_PROJETOFINAL.FormInicial.resources
+C:\Users\Utilizador\source\Final\obj\Debug\M11_PROJETOFINAL.gui.FormLogin.resources
+C:\Users\Utilizador\source\Final\obj\Debug\M11_PROJETOFINAL.Properties.Resources.resources
+C:\Users\Utilizador\source\Final\obj\Debug\M11_PROJETOFINAL.csproj.GenerateResource.cache
+C:\Users\Utilizador\source\Final\obj\Debug\M11_PROJETOFINAL.csproj.CoreCompileInputs.cache
+C:\Users\Utilizador\source\Final\obj\Debug\M11_PROJETOFINAL.csproj.CopyComplete
+C:\Users\Utilizador\source\Final\obj\Debug\M11_PROJETOFINAL.exe
+C:\Users\Utilizador\source\Final\obj\Debug\M11_PROJETOFINAL.pdb

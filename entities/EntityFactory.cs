@@ -10,7 +10,6 @@ namespace M11_PROJETOFINAL.entities
     {
 
         /// <summary>
-        /// The dictionary responsible for holding all the usernames mapped to their respective user classes.
         /// Esse dicionário é responsável por guardar todos os usernames mapeados para suas classes respetivas.
         /// </summary>
         public Dictionary<string, User> EntityUserMapping { get; set; } = new Dictionary<string, User>()
